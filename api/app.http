@@ -42,3 +42,12 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YzVlZTU3OTExOGU2
 GET  http://localhost:3000/api/users/notification
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YzVlZTU3OTExOGU2ZDZkODExMTc3YSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3NDE0MjUyMzAsImV4cCI6MjM0NjIyNTIzMH0.i83fDll6BrKPdTPonjvrXKROE_u7z3dHpgzAbW-pU40
 
+###
+POST http://localhost:3000/api/contact
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john@example.com",
+    "message": "I need help with my account."
+}

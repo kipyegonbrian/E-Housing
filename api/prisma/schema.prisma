@@ -151,3 +151,11 @@ model Payment {
   booking       Booking       @relation(fields: [bookingId], references: [id])
   bookingId     String  @unique @db.ObjectId
 }
+
+model Contact {
+  id      String  @id @default(auto()) @map("_id") @db.ObjectId
+  name    String
+  email   String
+  message String
+  createdAt DateTime @default(now())
+}

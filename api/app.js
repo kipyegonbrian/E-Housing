@@ -10,6 +10,7 @@ import chatRoute from "./routes/chat.route.js";
 import messageRoute from "./routes/message.route.js";
 // import paymentRoute from "./routes/payment.route.js";
 import { payment } from "./controllers/payment.controller.js";
+import { contactUs } from "./controllers/contactUs.contoller.js";
 
 const app = express();
 
@@ -41,6 +42,7 @@ app.use("/api/test", testRoute);
 app.use("/api/chats", chatRoute);
 app.use("/api/messages", messageRoute);
 app.use("/api/payment", payment);
+app.use("/api/contact", contactUs)
 
 app.listen(3000, () => {
   console.log("Server is running!");
